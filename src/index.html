@@ -1,15 +1,48 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8" />
-    <title>My First Parcel App</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="lang" content="es" />
+    <title>Biografía de alguien</title>
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="app.js"></script>
 </head>
 
 <body>
-    <h1>Hello, World!</h1>
+    <header>
+        <div class="title">
+            <span>Kurt Cobain</span>
+            <span>(1967-1994)</span>
+        </div>
+        <nav>
+            <div class="col- menu">
+                <ul>
+                    <li><a href="#">Portada </a></li>
+                    <li><a href="#">Presentación</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Categorías</button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Enlaces</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="bigphoto">
+            <img class="bigimage" src="./img/kurt cobain.jpg" alt="" />
+        </section>
+    </main>
 </body>
 
 </html>

@@ -1,9 +1,170 @@
-h1 {
-    color: hotpink;
-    font-family: cursive;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'nirvana';
+  src: url('./nirvana.ttf') format('ttf'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('./nirvana.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+body > header,footer,main aside {
+  font-family: 'Open Sans', sans-serif;
+}
+body > header {
+  padding-bottom: 2rem;
+}
+body > header img {
+  padding-bottom: 1.25rem;
+}
+body > footer img {
+  padding-bottom: 0.75rem;
+}
+
+header > div {
+  font-family: "nirvana";
+  font-size: 5rem;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 15%;
+}
+header > .title > span
+{
+    display: block;
+    width: 100%;
+}
+nav li {
+  display: inline-block;
+  font-size: 1.25rem;
+  width: 100%;
+  font-weight: 800;
+  padding-top: 0.25rem;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  color: rgb(189, 55, 0);
+}
+
+.active:hover {
+  color: rgb(189, 55, 0);
+  border-bottom: 3px solid rgb(189, 55, 0);
+}
+.active {
+  text-decoration: none;
+  color: black;
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.menu li {
+  width: auto;
+  text-align: left;
+  padding-right: 2rem;
+  font-size: 1.75rem;
+  display: block;
+}
+.menu {
+    text-align: left;
+    font-size: 1.75rem;
+    padding-left: 15%;
+}
+
+.dropbtn {
+  font-size: 1.75rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  font-size: 1.25rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 5rem;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+  display: block;
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: rgb(189, 55, 0);
+}
+.bigimage {
+  height:auto;
+  width: 100%;
+}
+.bigphoto {
+  text-align: left;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+
+/* Diseño mobile first, diseñamos para móvil y ya cambiamos para otros tamaños */
+[class*="col-"] {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+/* Haremos el cambio cuando sea mayor de 1024 */
+ .header {   
+     text-align:left ;
+     padding-left: 15%;
   }
-  body {
-    height: 100vh;
-    color: #1f1f1f;
-    background: linear-gradient(to bottom, #bada55, #c0ffee);
+  .menu li {
+    display: inline-block;
+      width: auto;
+      text-align: left;
+      padding-right: 2rem;
+      font-size: 1.75rem;
   }
+  .menu {
+      text-align: left;
+      font-size: 1.75rem;
+      padding-left: 15%;
+  }
+  .dropdown-content {
+    margin-left: 0rem;
+  }
+  header > .title > span {
+    width: auto;
+    display: inline-block;
+  }
+  .col-3 {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .col-2 {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-start: 1;
+      display: grid;
+  }
+  .col-row {
+      grid-template-columns: 24% 76%;
+  }
+  
+}
