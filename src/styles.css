@@ -143,7 +143,7 @@ abbr {
   font-size: smaller;
 }
 .presentation {
-  padding: 10% 15% 5% 15%;
+  padding: 5% 15% 5% 15%;
   font-weight: 400;
 }
 .presentation span {
@@ -200,7 +200,7 @@ abbr {
       grid-template-columns: 24% 76%;
   }
   .presentation {
-    padding: 5% 15%;
+    padding: 2.5% 15% 2.5% 15%;
     margin-top: 0%;
   }
   .end span {
