@@ -9,7 +9,7 @@
    url('./nirvana.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }  
 
-body > header,footer,main aside {
+body > header,footer,main {
   font-family: 'Open Sans', sans-serif;
 }
 body > header {
@@ -41,11 +41,11 @@ nav li {
   font-weight: 800;
   padding-top: 0.25rem;
 }
-nav a {
+a {
   text-decoration: none;
   color: black;
 }
-nav a:hover {
+ a:hover {
   color: rgb(189, 55, 0);
 }
 
@@ -99,9 +99,7 @@ nav a:hover {
 }
 
 .dropdown-content a {
-  color: black;
   padding: 0.25rem 1rem;
-  text-decoration: none;
   display: block;
   background-color: white;
 }
@@ -113,6 +111,7 @@ nav a:hover {
 .dropdown:hover .dropbtn {
   color: rgb(189, 55, 0);
 }
+/* portada */
 .bigimage {
   height:auto;
   width: 100%;
@@ -122,6 +121,23 @@ nav a:hover {
   padding-left: 15%;
   padding-right: 15%;
 }
+.bigphoto figcaption {
+  text-align: center;
+  font-size: smaller;
+}
+.presentation {
+  padding: 10% 15%;
+  font-weight: 400;
+}
+.presentation span {
+  font-weight: 600;
+}
+.presentation ul {
+  margin-top: 5%;
+  list-style: none;
+  line-height: 150%;
+}
+
 
 
 /* Diseño mobile first, diseñamos para móvil y ya cambiamos para otros tamaños */
@@ -166,5 +182,8 @@ nav a:hover {
   .col-row {
       grid-template-columns: 24% 76%;
   }
-  
+  .presentation {
+    padding: 5% 15%;
+    margin-top: 0%;
+  }
 }
