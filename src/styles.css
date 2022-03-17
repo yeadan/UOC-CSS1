@@ -122,9 +122,7 @@ a {
   display: block;
   width: 100%;
 }
-.end p {
-  padding-bottom: 0.25rem;
-}
+
 abbr {
   text-decoration: none;
 }
@@ -154,14 +152,28 @@ abbr {
   list-style: none;
   line-height: 150%;
 }
+/* discografía */
+.container {
+  text-align: left;
+  margin:auto;
+  display: grid;
+    font-family: "nirvana";
+    font-size: 5rem;
+    font-weight: 400;
+    padding-left: 15%;
+}
+
+.container figure img{
+  width: 100%;
+}
+.icon {
+  height: 4rem;
+}
 
 
 
 /* Diseño mobile first, diseñamos para móvil y ya cambiamos para otros tamaños */
-[class*="col-"] {
-  width: 100%;
-  text-align: center;
-}
+
 
 @media screen and (min-width: 1024px) {
 /* Haremos el cambio cuando sea mayor de 1024 */
@@ -204,7 +216,6 @@ abbr {
     margin-top: 0%;
   }
   .end span {
-    width: auto;
-    display: inline-block;
-}
+    text-align: center;
+  }
 }
