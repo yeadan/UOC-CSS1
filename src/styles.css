@@ -222,11 +222,19 @@ blockquote:after {
   height: auto;
   padding: 2.5%;  
 }
+/* Listado canciones */
+.songs {
+ padding-left: 1rem;
+ line-height: 1.9rem;
+}
+.caratula img {
+  max-width: 375px;
+  width: 35vw;
+}
 
 
 
 /* Diseño mobile first, diseñamos para móvil y ya cambiamos para otros tamaños */
-
 
 @media screen and (min-width: 1024px) {
 /* Haremos el cambio cuando sea mayor de 1024 */
@@ -269,6 +277,9 @@ blockquote:after {
     margin-top: 0%;
   }
   .end span {
+    text-align: center;
+  }
+  .caratula {
     text-align: center;
   }
 }
