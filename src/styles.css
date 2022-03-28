@@ -231,6 +231,26 @@ blockquote:after {
   max-width: 375px;
   width: 35vw;
 }
+/*links*/
+.links h1,.links h2, .links span{
+  font-family: "nirvana";
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 2rem;
+}
+.links h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+.links h2 {
+  font-size: 3.75rem;
+  font-weight: 400;
+}
+.links a {
+  margin-left: 1rem;
+}
+
+
 
 
 
