@@ -250,10 +250,6 @@ blockquote:after {
   margin-left: 1rem;
 }
 
-
-
-
-
 /* Diseño mobile first, diseñamos para móvil y ya cambiamos para otros tamaños */
 
 @media screen and (min-width: 1024px) {
@@ -288,9 +284,6 @@ blockquote:after {
       grid-template-columns: repeat(2, 1fr);
       grid-column-start: 1;
       display: grid;
-  }
-  .col-row {
-      grid-template-columns: 24% 76%;
   }
   .presentation {
     padding: 2.5% 15% 2.5% 15%;
