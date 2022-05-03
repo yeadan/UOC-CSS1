@@ -8,15 +8,12 @@
     <meta name="lang" content="es" />
     <title>Biografía de Kurt Cobain</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="./../node_modules/@fortawesome/fontawesome-free/css/all.css">
     <script type="module" src="app.js"></script>
 </head>
 
 <body>
     <header>
         <div class="title">
-
-
             <span>Kurt Cobain</span>
             <span>(<time>1967</time>-<time>1994</time>)</span>
         </div>
@@ -30,7 +27,7 @@
                     <li><a href="./detail.html">Biografía</a></li>
                     <li>
                         <div class="dropdown">
-                            <button class="dropbtn"><a href="./discography.html">Discografía</a></button>
+                            <a class="dropbtn" href="./discography.html">Discografía</a>
                             <div class="dropdown-content">
                                 <a href="./bleach.html">Bleach</a>
                                 <a href="./nevermind.html">Nevermind</a>
@@ -44,16 +41,16 @@
         </nav>
     </header>
     <main>
-        <section class="bigphoto">
+        <div class="bigphoto">
             <figure>
-                <img class="bigimage" src="./img/kurt cobain.jpg" alt="Kurt Cobain" />
+                <img class="bigimage clip" src="./img/kurtcobain.jpg" alt="Kurt Cobain" />
                 <figcaption>
                     <span>Kurt Cobain. Foto de <a target="_blank"
                             href="https://www.flickr.com/photos/queenieandthedew/6833389186">Sally</a></span>
                 </figcaption>
             </figure>
-        </section>
-        <section class="presentation">
+        </div>
+        <div class="presentation">
             <p>
                 <span>Kurt Donald Cobain</span> fue un cantante, músico y compositor estadounidense, conocido por haber
                 sido el
@@ -73,11 +70,30 @@
                 </li>
             </ul>
 
-        </section>
+        </div>
     </main>
     <footer>
         <div class="footer end">
-            <span><time>2022</time> <i class="fa fa-copyright"></i> Sergio Bosch Vega</span>
+            <div class="menu_footer col-">
+                <div class="img_footer">
+                    <a href="index.html">
+                        <img class="logo_footer" src="img/vectorpaint.svg" alt="logo web kurt">
+                    </a>
+                </div>
+                <div class="link_footer">
+                    <ul>
+
+                        <li><a href="./index.html">Inicio </a></li>
+                        <li><a href="./detail.html">Biografía</a></li>
+                        <li>
+                            <a class="" href="./discography.html">Discografía</a>
+                        </li>
+                        <li><a href="./links.html">Enlaces</a></li>
+                    </ul>
+                </div>
+                <div><span><time>2022</time> <i class="fa fa-copyright"></i> Sergio Bosch Vega</span></div>
+            </div>
+
         </div>
     </footer>
 </body>

@@ -8,7 +8,6 @@
     <meta name="lang" content="es" />
     <title>Biografía de Kurt Cobain: Discografía - Bleach</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="./../node_modules/@fortawesome/fontawesome-free/css/all.css">
     <script type="module" src="app.js"></script>
 </head>
 
@@ -28,7 +27,7 @@
                     <li><a href="./detail.html">Biografía</a></li>
                     <li>
                         <div class="dropdown">
-                            <button class="dropbtn"><a class="active" href="./discography.html">Discografía</a></button>
+                            <a class="active dropbtn" href="./discography.html">Discografía</a>
                             <div class="dropdown-content">
                                 <a href="./bleach.html">Bleach</a>
                                 <a href="./nevermind.html">Nevermind</a>
@@ -42,7 +41,7 @@
         </nav>
     </header>
     <main>
-        <section class="container col-3">
+        <div class="container col-3">
             <div>
                 <a class="active" href="./bleach.html"> <img class="icon" src="./img/Nirvana-Bleach.jpg" alt="Bleach" />
                     Bleach</a>
@@ -55,8 +54,8 @@
                 <a href="./inutero.html"><img class="icon" src="./img/Nirvana-In_Utero.jpg" alt="In Utero" />
                     In Utero</a>
             </div>
-        </section>
-        <section class="presentation">
+        </div>
+        <div class="presentation">
             <p>
                 <b>Bleach</b> es el álbum debut de la banda de grunge estadounidense
                 Nirvana, lanzado en junio de <time>1989</time> a través del sello discográfico independiente Sub Pop. La
@@ -85,7 +84,7 @@
                 mundial.
                 Es el disco de Sub Pop con mayor cantidad de ventas.
             </p>
-        </section>
+        </div>
         <section class="presentation">
             <h1>Grabación</h1><br>
             <p>
@@ -152,7 +151,26 @@
     </main>
     <footer>
         <div class="footer end">
-            <span><time>2022</time> <i class="fa fa-copyright"></i> Sergio Bosch Vega</span>
+            <div class="menu_footer col-">
+                <div class="img_footer">
+                    <a href="index.html">
+                        <img class="logo_footer" src="img/vectorpaint.svg" alt="logo web kurt">
+                    </a>
+                </div>
+                <div class="link_footer">
+                    <ul>
+
+                        <li><a href="./index.html">Inicio </a></li>
+                        <li><a href="./detail.html">Biografía</a></li>
+                        <li>
+                            <a class="" href="./discography.html">Discografía</a>
+                        </li>
+                        <li><a href="./links.html">Enlaces</a></li>
+                    </ul>
+                </div>
+                <div><span><time>2022</time> <i class="fa fa-copyright"></i> Sergio Bosch Vega</span></div>
+            </div>
+
         </div>
     </footer>
 </body>
