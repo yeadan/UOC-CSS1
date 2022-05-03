@@ -3,11 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: 'nirvana';
-  src: url('./nirvana.ttf') format('ttf'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-   url('./nirvana.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}  
+  src: url('./nirvana.ttf') format('ttf'),
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('./nirvana.ttf') format('truetype');
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
 @font-face {
   font-family: 'Special Elite';
   font-style: normal;
@@ -16,31 +20,62 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-body > header,footer,main {
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+body>header,
+footer,
+main {
   font-family: 'Open Sans', sans-serif;
 }
-body > header {
+
+body>header {
   padding-bottom: 2rem;
 }
-body > header img {
+
+body>header img {
   padding-bottom: 1.25rem;
 }
-body > footer img {
+
+body>footer img {
   padding-bottom: 0.75rem;
 }
 
-header > div {
+header>div {
   font-family: "nirvana";
   font-size: 5rem;
   font-weight: 400;
   text-align: left;
   padding-left: 15%;
 }
-header > .title > span
-{
-    display: block;
-    width: 100%;
+
+header>.title>span {
+  display: block;
+  width: 100%;
 }
+
+.logo {
+  position: relative;
+  width: 50px;
+  top: 35px;
+  animation: bounceIn 2s;
+
+}
+
 nav li {
   display: inline-block;
   font-size: 1.25rem;
@@ -48,22 +83,28 @@ nav li {
   font-weight: 800;
   padding-top: 0.25rem;
 }
+
 a {
   text-decoration: none;
   color: black;
+  transition: color 0.75s, border 0.75s;
 }
- a:hover {
+
+a:hover {
   color: rgb(189, 55, 0);
+  transition: color 0.75s, border 0.75s;
 }
 
 .active:hover {
   color: rgb(189, 55, 0);
   border-bottom: 3px solid rgb(189, 55, 0);
 }
+
 .active {
   text-decoration: none;
   color: black;
   border-bottom: 3px solid rgb(0, 0, 0);
+
 }
 
 .menu li {
@@ -73,10 +114,11 @@ a {
   font-size: 1.75rem;
   display: block;
 }
+
 .menu {
-    text-align: left;
-    font-size: 1.75rem;
-    padding-left: 15%;
+  text-align: left;
+  font-size: 1.75rem;
+  padding-left: 15%;
 }
 
 .dropbtn {
@@ -100,7 +142,7 @@ a {
   position: absolute;
   min-width: 160px;
   font-size: 1.25rem;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   margin-left: 5rem;
 }
@@ -118,134 +160,158 @@ a {
 .dropdown:hover .dropbtn {
   color: rgb(189, 55, 0);
 }
+
 /* footer*/
 .footer {
   padding-left: 15%;
   padding-right: 15%;
   padding-bottom: 1rem;
 }
-.end span{
+
+.end span {
   font-size: 0.75rem;
   display: block;
   width: 100%;
 }
+
 abbr {
   text-decoration: none;
 }
+
 /* portada */
 .bigimage {
-  height:auto;
+  height: auto;
   width: 100%;
 }
+
 .bigphoto {
   text-align: left;
   padding-left: 15%;
   padding-right: 15%;
 }
+
 figcaption {
   text-align: center;
   font-size: smaller;
 }
+
 .presentation {
   padding: 5% 15% 5% 15%;
   font-weight: 400;
   line-height: 1.4rem;
 }
+
 .presentation p {
   text-align: justify;
 }
+
 .presentation span {
   font-weight: 600;
 }
+
 .presentation ul {
   margin-top: 2.5%;
   list-style: none;
   line-height: 150%;
 }
+
 /* discografía */
 .container {
   text-align: left;
-  margin:auto;
+  margin: auto;
   display: grid;
   font-family: "nirvana";
   font-size: 5rem;
   font-weight: 400;
   padding-left: 15%;
 }
-.container figure img{
+
+.container figure img {
   width: 100%;
 }
+
 .icon {
   height: 4rem;
 }
+
 /* detail */
 blockquote {
   font-family: 'Special Elite', cursive;
-	font-weight: 100;
-	max-width: 600px;
-	line-height: 1.4;
-	position: relative;
-	padding: .5rem;
+  font-weight: 100;
+  max-width: 600px;
+  line-height: 1.4;
+  position: relative;
+  padding: .5rem;
   margin-left: 3rem;
 }
 
 blockquote:before,
 blockquote:after {
-	position: absolute;
-	color: #f1efe6;
-	font-size: 6rem;
-	width: 4rem;
-	height: 4rem;
+  position: absolute;
+  color: #f1efe6;
+  font-size: 6rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 blockquote:before {
-	content: '“';
-	left: -3rem;
-	top: -1rem;
+  content: '“';
+  left: -3rem;
+  top: -1rem;
 }
 
 blockquote:after {
-	content: '”';
-	right: -3rem;
+  content: '”';
+  right: -3rem;
 }
+
 .cita {
-    font-family: 'Special Elite', cursive;
-    font-weight: 100;
-    max-width: 600px;
-    position: relative;
-    padding: .5rem;
-    text-align: center;
-    line-height: 3;
+  font-family: 'Special Elite', cursive;
+  font-weight: 100;
+  max-width: 600px;
+  position: relative;
+  padding: .5rem;
+  text-align: center;
+  line-height: 3;
 }
+
 .photo {
   width: 100%;
   height: auto;
-  padding: 2.5%;  
+  padding: 2.5%;
 }
+
 /* Listado canciones */
 .songs {
- padding-left: 1rem;
- line-height: 1.9rem;
+  padding-left: 1rem;
+  line-height: 1.9rem;
 }
+
 .caratula img {
   max-width: 375px;
   width: 35vw;
 }
+
 /*links*/
-.links h1,.links h2, .links span{
+.links h1,
+.links h2,
+.links span {
   font-family: "nirvana";
   font-weight: 400;
   line-height: 1.2;
   font-size: 2rem;
 }
+
 .links h1 {
   font-size: 5rem;
   font-weight: 400;
 }
+
 .links h2 {
   font-size: 3.75rem;
   font-weight: 400;
 }
+
 .links a {
   margin-left: 1rem;
 }
@@ -253,45 +319,55 @@ blockquote:after {
 /* Diseño mobile first, diseñamos para móvil y ya cambiamos para otros tamaños */
 
 @media screen and (min-width: 1024px) {
-/* Haremos el cambio cuando sea mayor de 1024 */
- .header {   
-     text-align:left ;
-     padding-left: 15%;
+
+  /* Haremos el cambio cuando sea mayor de 1024 */
+  .header {
+    text-align: left;
+    padding-left: 15%;
   }
+
   .menu li {
     display: inline-block;
-      width: auto;
-      text-align: left;
-      padding-right: 2rem;
-      font-size: 1.75rem;
+    width: auto;
+    text-align: left;
+    padding-right: 2rem;
+    font-size: 1.75rem;
   }
+
   .menu {
-      text-align: left;
-      font-size: 1.75rem;
-      padding-left: 15%;
+    text-align: left;
+    font-size: 1.75rem;
+    padding-left: 15%;
   }
+
   .dropdown-content {
     margin-left: 0rem;
   }
-  header > .title > span {
+
+  header>.title>span {
     width: auto;
     display: inline-block;
   }
+
   .col-3 {
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
+
   .col-2 {
-      grid-template-columns: repeat(2, 1fr);
-      grid-column-start: 1;
-      display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-start: 1;
+    display: grid;
   }
+
   .presentation {
     padding: 2.5% 15% 2.5% 15%;
     margin-top: 0%;
   }
+
   .end span {
     text-align: center;
   }
+
   .caratula {
     text-align: center;
   }
