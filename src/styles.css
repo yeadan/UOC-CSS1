@@ -258,7 +258,11 @@ figcaption {
   padding-left: 15%;
 }
 
-.container figure img {
+figure {
+  padding-top: 5%;
+}
+
+figure img {
   width: 100%;
 }
 
@@ -396,6 +400,11 @@ blockquote:after {
   header>.title>span {
     width: auto;
     display: inline-block;
+  }
+
+  figure {
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
   .col-3 {
