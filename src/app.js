@@ -17,10 +17,7 @@ if ('loading' in HTMLImageElement.prototype) {
         img.srcset = img.dataset.srcset;
         img.removeAttribute('data-srcset');
     });
-    sources.forEach((source) => {
-        source.srcset = source.dataset.srcset;
-        source.removeAttribute('data-srcset');
-    });
+
 } else {
     // Dynamically import the LazySizes library
     const script = document.createElement('script');
