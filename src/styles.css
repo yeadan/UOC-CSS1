@@ -326,6 +326,8 @@ blockquote:after {
 .caratula img {
   max-width: 375px;
   width: 35vw;
+  max-height: 375px;
+  height: 35vw;
 }
 
 /*links*/
