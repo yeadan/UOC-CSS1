@@ -224,6 +224,8 @@ abbr {
   text-align: left;
   padding-left: 15%;
   padding-right: 15%;
+  width: 100;
+  height: 23.5;
 }
 
 figcaption {
@@ -271,6 +273,7 @@ figure img {
 }
 
 .icon {
+  width: 4rem;
   height: 4rem;
 }
 
