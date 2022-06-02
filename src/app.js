@@ -8,7 +8,6 @@ if (!!document.getElementById('disco')) {
 }
 
 // Añadimos a app.js el lazy loading
-
 if ('loading' in HTMLImageElement.prototype) {
     const images = document.querySelectorAll('img[loading="lazy"]');
     images.forEach(img => {
